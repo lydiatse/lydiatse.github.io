@@ -9,7 +9,10 @@
     "lint": "eslint **/*.{js,jsx,ts,tsx,json,css,scss,sass,html,yaml}"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,css,scss,sass,htm,yaml}": "prettier --write"
+    "src/**/*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "husky": {
     "hooks": {
@@ -20,6 +23,7 @@
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
     "@fontsource/cabin": "^4.5.0",
+    "@mui/icons-material": "^5.0.4",
     "@mui/material": "^5.0.4",
     "eslint-config-airbnb": "^18.2.1",
     "next": "11.1.2",

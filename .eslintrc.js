@@ -1,38 +1,41 @@
 module.exports = {
-  root: true,
   parser: '@typescript-eslint/parser',
   extends: [
-    'standard',
-    'eslint:recommended',
-    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:import/errors',
-    'plugin:import/warnings',
-    'plugin:promise/recommended',
-    'prettier',
+    'plugin:prettier/recommended',
   ],
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
   },
-  plugins: ['prettier', '@typescript-eslint'],
+  plugins: ['prettier', 'react-hooks'],
   rules: {
-    'comma-dangle': ['error', 'always-multiline'],
-    'no-empty-pattern': ['off'],
-    'no-undef': ['error'],
-    'no-var': ['error'],
-    'object-curly-spacing': ['error', 'always'],
-    indent: ['off'],
-    'prettier/prettier': [
-      'error',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'prettier/prettier': 'warn',
+    'sort-imports': [
+      'warn',
       {
-        singleQuote: true,
-        semi: false,
+        ignoreCase: false,
+        ignoreDeclarationSort: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ['none', 'all', 'multiple', 'single'],
+        allowSeparatedGroups: true,
       },
     ],
   },
-  env: {
-    // change as necessary
-    node: true,
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      rules: {
+        'react/prop-types': 'off',
+      },
+    },
+  ],
 };
