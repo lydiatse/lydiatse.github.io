@@ -1,6 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
-import { Box, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { Layout } from '../components';
 import heroPic from '../../public/hero.png';
 
@@ -15,15 +14,7 @@ export default function Home() {
         spacing={8}
       >
         <Grid item>
-          <Box
-            sx={{
-              height: 500,
-              mx: '2rem',
-              width: 500,
-            }}
-          >
-            <Image src={heroPic} alt="Photo of Lydia" />
-          </Box>
+          <img src={heroPic} alt="Photo of Lydia" style={{ width: '30rem' }} />
         </Grid>
         <Grid item>
           <Typography variant="h2" component="p">
