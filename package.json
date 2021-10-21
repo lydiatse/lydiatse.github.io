@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint **/*.{js,jsx,ts,tsx,json,css,scss,sass,html,yaml}"
   },
@@ -23,7 +23,6 @@
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
     "@fontsource/cabin": "^4.5.0",
-    "@fontsource/fira-code": "^4.5.1",
     "@mui/icons-material": "^5.0.4",
     "@mui/material": "^5.0.4",
     "eslint-config-airbnb": "^18.2.1",

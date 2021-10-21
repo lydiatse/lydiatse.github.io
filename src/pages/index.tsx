@@ -26,10 +26,18 @@ export default function Home() {
           </Box>
         </Grid>
         <Grid item>
-          <Typography variant="h2">Hi there! I&apos;m a</Typography>
-          <Typography variant="h2">Computer Scientist,</Typography>
-          <Typography variant="h2">Teacher &amp;</Typography>
-          <Typography variant="h2">Lifelong Learner.</Typography>
+          <Typography variant="h2" component="p">
+            Hi there! I&apos;m a
+          </Typography>
+          <Typography variant="h2" component="p">
+            computer scientist,
+          </Typography>
+          <Typography variant="h2" component="p">
+            teacher &amp;
+          </Typography>
+          <Typography variant="h2" component="p">
+            lifelong learner.
+          </Typography>
         </Grid>
       </Grid>
     </Layout>

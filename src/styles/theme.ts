@@ -14,7 +14,6 @@ export const theme = createTheme({
       '-apple-system',
       'BlinkMacSystemFont',
       '"Segoe UI"',
-      '"Fira Code"',
       'Cabin',
       'Arial',
       'sans-serif',
