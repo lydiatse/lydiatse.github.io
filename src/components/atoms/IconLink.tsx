@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Tooltip } from '@mui/material';
+import { theme } from '../../styles';
 
 export interface IconLinkProps {
   href: string;
@@ -12,7 +13,9 @@ export function IconLink({ href, icon, text }: IconLinkProps) {
     <Tooltip title={text}>
       <Link
         href={href}
-        sx={{ color: '#2f4ac2' }}
+        sx={{
+          color: theme.palette.secondary.main,
+        }}
         target="_blank"
         underline="none"
       >

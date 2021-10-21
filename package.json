@@ -23,6 +23,7 @@
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
     "@fontsource/cabin": "^4.5.0",
+    "@fontsource/fira-code": "^4.5.1",
     "@mui/icons-material": "^5.0.4",
     "@mui/material": "^5.0.4",
     "eslint-config-airbnb": "^18.2.1",

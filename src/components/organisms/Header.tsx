@@ -17,9 +17,7 @@ export function Header() {
           justifyContent="space-between"
         >
           <Grid item xs={9}>
-            <Typography variant="h2" component="h1">
-              &lt;Lydia Tse/&gt;
-            </Typography>
+            <Typography variant="h1">&lt;Lydia Tse/&gt;</Typography>
           </Grid>
           <Grid
             alignItems="center"
