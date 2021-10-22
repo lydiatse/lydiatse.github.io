@@ -13,8 +13,8 @@ export default function Home() {
         justifyContent="center"
         spacing={8}
       >
-        <Grid item>
-          <img src={heroPic} alt="Photo of Lydia" style={{ width: '30rem' }} />
+        <Grid item sm={5}>
+          <img src={heroPic} alt="Photo of Lydia" style={{ width: '100%' }} />
         </Grid>
         <Grid item>
           <Typography variant="h2" component="p">
