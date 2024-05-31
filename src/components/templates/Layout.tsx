@@ -1,5 +1,8 @@
-import React from 'react';
+'use client';
+import { ThemeProvider } from '@mui/material';
 import { Header } from '../organisms';
+import { theme } from '../../styles';
+import '@fontsource/cabin/400.css';
 
 export interface LayoutProps {
   children: any;
@@ -8,8 +11,10 @@ export interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <>
-      <Header />
-      <main>{children}</main>
+      <ThemeProvider theme={theme}>
+        <Header />
+        <main>{children}</main>
+      </ThemeProvider>
     </>
   );
 }
